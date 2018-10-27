@@ -1,0 +1,11 @@
+.wrap {
+  height: 100%;  // parent should be box-sizing border-box, or fit it manually
+
+  > div:first-of-type {
+    height: 100%;  // instance.get('container')
+
+    > div canvas {
+      display: block;  // avoid line-height space
+    }
+  }
+}
